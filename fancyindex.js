@@ -147,14 +147,7 @@ var arrayOfCurrentPath = currentPath.split("/");
 arrayOfCurrentPath.splice(0, 1);
 arrayOfCurrentPath.splice(arrayOfCurrentPath.length - 1, 1);
 
-if (arrayOfCurrentPath.length > 0) {
-    document.getElementById("currentTitle").innerHTML =
-        arrayOfCurrentPath[arrayOfCurrentPath.length - 1];
-} else {
-    document.getElementById("currentTitle").innerHTML = "Root";
-}
 document.getElementById("homelink").href = "../".repeat(arrayOfCurrentPath.length);
-document.getElementById("homebtn").href = "../".repeat(arrayOfCurrentPath.length);
 
 // manage sort
 if (window.location.href.split("?")[1] == "C=M&O=D") {
@@ -286,4 +279,3 @@ for (var i = 0; i < listOfItems.length; ++i) {
 }
 
 var out = window.location.href.replace(/:\/\//, "://log:out@");
-document.getElementById("logOut").href = out;
