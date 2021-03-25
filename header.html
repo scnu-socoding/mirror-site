@@ -40,58 +40,27 @@
     <link rel="stylesheet" href="/fancyindex/fancyindex.css">
 </head>
 
+<style>
+    .demo-layout-transparent {
+        background: url('../assets/demos/transparent.jpg') center / cover;
+    }
+
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+        /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+        color: white;
+    }
+</style>
+
 <body>
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <!-- waterfall for second row hidden if scroll-->
         <header class="mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title" id="currentTitle">Title</span>
-                <div class="mdl-layout-spacer"></div>
-                <!-- Add spacer, to align navigation to the right -->
-                <a id="homebtn" href="" class="no-mobile">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                        <i class="material-icons" role="presentation">home</i>
-                    </button>
-                </a>
-                <button id="sortbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                    <i class="material-icons" role="presentation">sort</i>
-                </button>
-                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-list" for="sortbtn">
-                    <li class="mdl-list__item mdl-menu__item">
-                        <a id="sortByDate" href="?C=M&O=D">
-                            <span class="mdl-list__item-primary-content">
-                                <i class="material-icons mdl-list__item-icon">date_range</i>
-                                按照时间排序
-                            </span>
-                        </a>
-                    </li>
-                    <li class="mdl-list__item mdl-menu__item">
-                        <a id="sortByName" href="?C=N&O=D">
-                            <span class="mdl-list__item-primary-content">
-                                <i class="material-icons mdl-list__item-icon">sort_by_alpha</i>
-                                按照名称排序
-                            </span>
-                        </a>
-                    </li>
-                    <!-- <li class="mdl-list__item mdl-menu__item">
-                        <a id="sortBySize" href="?C=S&O=D">
-                            <span class="mdl-list__item-primary-content">
-                                <i class="material-icons mdl-list__item-icon">filter_list</i>
-                                By Size
-                            </span>
-                        </a>
-                    </li> -->
-                </ul>
-                <!-- <a id="logOut" href="">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                        <i class="material-icons" role="presentation">lock_open</i>
-                    </button>
-                </a> -->
-            </div>
-            <div class="mdl-layout__header-row">
-                <div class="no-search mdl-typography--title" id="currentPathTitle">/path/path/path</div>
+                <!-- <span class="mdl-layout-title" id="currentTitle">Title</span> -->
+                <div class="no-search mdl-typography--title" id="currentPathTitle"></div>
                 <div class="no-search mdl-layout-spacer"></div>
                 <label class="no-search mdl-button mdl-js-button mdl-button--icon" onclick="clickSearch()">
                     <i class="material-icons">search</i>
@@ -143,6 +112,15 @@
                             </span>
                         </a>
                     </li>
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="linux-dl" target="_blank"
+                            href="//github.com/SCNU-SoCoding/ci/actions/workflows/mirrors-main.yml">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">sync</i>
+                                同步状态
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -163,7 +141,7 @@
 
                 .demo-card-wide>.mdl-card__title {
                     color: #fff;
-                    height: 250px;
+                    height: 300px;
                     background: url('/fancyindex/images/wallpaper.png') center / cover;
                 }
 
@@ -177,17 +155,36 @@
                     <h2 class="mdl-card__title-text">SCNU SoCoding 镜像站</h2>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    本站由华南师范大学软件协会负责维护，仅面向华南师大在校师生提供服务。
+                    本站由华南师大软件协会维护，面向华南师大在校师生提供服务。
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="//socoding.cn/t/topic/7" target="_blank">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                        href="//socoding.cn/t/topic/7" target="_blank">
                         了解软件协会
                     </a>
                 </div>
                 <div class="mdl-card__menu">
-                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
+                    <button id="sortbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                        <i class="material-icons" role="presentation">sort</i>
                     </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-list" for="sortbtn">
+                        <li class="mdl-list__item mdl-menu__item">
+                            <a id="sortByDate" href="?C=M&O=D">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-icon">date_range</i>
+                                    按照时间排序
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mdl-list__item mdl-menu__item">
+                            <a id="sortByName" href="?C=N&O=D">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-icon">sort_by_alpha</i>
+                                    按照名称排序
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
