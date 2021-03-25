@@ -254,12 +254,13 @@ for (var i = 0; i < listOfItems.length; ++i) {
         color = "mdl-color--accent";
         viewGetInfo = "getinfo-novisible";
     }
-    if (typOfSort == "date") {
-        txtInfo = dte;
+    if (size != "") {
+        txtInfo = ' · ' + dte + ' · ' + size;
+    } else if (dte != "") {
+        txtInfo = ' · ' + dte;
     }
-    if (typOfSort == "size") {
-        txtInfo = size;
-    }
+    
+    
 
     document.getElementById("listItems").appendChild(
         htmlToElement(
