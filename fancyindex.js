@@ -79,10 +79,10 @@ function clickGetInfo(id) {
     dte = item.childNodes[2].textContent;
     if (lib.substring(lib.length - 1) == "/") {
         icon = "folder_open";
-        color = "mdl-color--accent";
+        color = "mdl-color--primary";
     } else {
         icon = "insert_drive_file";
-        color = "mdl-color--accent-dark";
+        color = "mdl-color--primary-dark";
     }
     while (document.getElementById("templateDialog").firstChild) {
         document
@@ -156,9 +156,9 @@ if (window.location.href.split("?")[1] == "C=M&O=D") {
 if (window.location.href.split("?")[1] == "C=N&O=D") {
     document.getElementById("sortByName").href = "?C=N&O=A";
 }
-if (window.location.href.split("?")[1] == "C=S&O=D") {
-    document.getElementById("sortBySize").href = "?C=S&O=A";
-}
+// if (window.location.href.split("?")[1] == "C=S&O=D") {
+//     document.getElementById("sortBySize").href = "?C=S&O=A";
+// }
 
 // menu
 var templateLink = `
@@ -199,7 +199,7 @@ var templateItem = `
             </a>
         </span>
         <span class="mdl-list__item-secondary-content">
-            <a class="mdl-list__item-secondary-action mdl-color-text--accent specViewGetInfo" href="#" onclick="clickGetInfo(specId)">
+            <a class="mdl-list__item-secondary-action mdl-color-text--primary specViewGetInfo" href="#" onclick="clickGetInfo(specId)">
                 <i class="material-icons">more_vert</i>
             </a>
         </span>
@@ -237,11 +237,11 @@ for (var i = 0; i < listOfItems.length; ++i) {
     txtInfo = "";
     if (lib.substring(lib.length - 1) == "/") {
         icon = "folder_open";
-        color = "mdl-color--accent";
+        color = "mdl-color--primary";
         lib = lib.substring(0, lib.length - 1);
     } else {
         icon = "insert_drive_file";
-        color = "mdl-color--accent-dark";
+        color = "mdl-color--primary-dark";
     }
     if (size == "-") {
         size = "";
@@ -251,7 +251,7 @@ for (var i = 0; i < listOfItems.length; ++i) {
     }
     if (size == "" && dte == "" && lib == "Parent directory") {
         icon = "arrow_back";
-        color = "mdl-color--primary";
+        color = "mdl-color--accent";
         viewGetInfo = "getinfo-novisible";
     }
     if (typOfSort == "date") {
