@@ -82,7 +82,7 @@ function clickGetInfo(id) {
         color = "mdl-color--primary";
     } else {
         icon = "insert_drive_file";
-        color = "mdl-color--primary-dark";
+        color = "mdl-color--accent-dark";
     }
     while (document.getElementById("templateDialog").firstChild) {
         document
@@ -241,7 +241,7 @@ for (var i = 0; i < listOfItems.length; ++i) {
         lib = lib.substring(0, lib.length - 1);
     } else {
         icon = "insert_drive_file";
-        color = "mdl-color--primary-dark";
+        color = "mdl-color--accent-dark";
     }
     if (size == "-") {
         size = "";
