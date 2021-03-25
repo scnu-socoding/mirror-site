@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>华南师范大学软件协会开源镜像站</title>
+    <title>SCNU SoCoding 镜像站</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -100,7 +100,8 @@
                     <input class="mdl-textfield__input fullwidth" type="text" id="search-field">
                 </div>
                 <div class="search search-novisible mdl-layout-spacer"></div>
-                <label class="search search-novisible mdl-button mdl-js-button mdl-button--icon" for="search-field" onclick="clickResetSearch()">
+                <label class="search search-novisible mdl-button mdl-js-button mdl-button--icon" for="search-field"
+                    onclick="clickResetSearch()">
                     <i class="material-icons">clear</i>
                 </label>
             </div>
@@ -122,7 +123,23 @@
                         <a id="homelink" href="">
                             <span class="mdl-list__item-primary-content">
                                 <i class="material-icons mdl-list__item-icon">home</i>
-                                Home
+                                镜像站首页
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="linux-dl" target="_blank" href="//socoding.cn/c/mirror/announcement/33">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">insert_drive_file</i>
+                                新闻与公告
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="linux-dl" target="_blank" href="//socoding.cn/c/mirror/documentation/34">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">question_answer</i>
+                                获取帮助
                             </span>
                         </a>
                     </li>
@@ -138,6 +155,42 @@
             </div>
         </dialog>
         <main class="mdl-layout__content">
+            <!-- Wide card with share menu button -->
+            <style>
+                .demo-card-wide.mdl-card {
+                    width: 100%;
+                }
+
+                .demo-card-wide>.mdl-card__title {
+                    color: #fff;
+                    height: 250px;
+                    background: url('/fancyindex/images/wallpaper.png') center / cover;
+                }
+
+                .demo-card-wide>.mdl-card__menu {
+                    color: #fff;
+                }
+            </style>
+
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">SCNU SoCoding 镜像站</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    本站由华南师范大学软件协会负责维护，仅面向华南师大在校师生提供服务。
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="//socoding.cn/t/topic/7" target="_blank">
+                        了解软件协会
+                    </a>
+                </div>
+                <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                    </button>
+                </div>
+            </div>
+
             <div class="content_fancyindex">
 
                 <ul class="mdl-list" id="listItems">
