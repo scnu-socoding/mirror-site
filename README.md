@@ -4,3 +4,5 @@
 
 - https://mirrors-internal.socoding.cn/
 - https://mirrors.socoding.cn/
+
+首页目前存放在 `index` 分支。
