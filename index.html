@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>SCNU SoCoding 软件源镜像服务</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/fancyindex/images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="/fancyindex/images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="/fancyindex/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="/fancyindex/images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    -->
+
+    <link rel="stylesheet" href="/fancyindex/roboto.css">
+    <link rel="stylesheet" href="/fancyindex/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="/fancyindex/dialog-polyfill.css" />
+
+
+    <script src="/fancyindex/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="/fancyindex/mdl/material.min.css">
+    <link rel="stylesheet" href="/fancyindex/fancyindex.css">
+</head>
+
+<style>
+    .demo-card-wide.mdl-card {
+        width: 100%;
+    }
+
+    .demo-card-wide>.mdl-card__title {
+        color: #fff;
+        height: 300px;
+        background: url('/fancyindex/images/wallpaper.png') center / cover;
+    }
+
+    .demo-card-wide>.mdl-card__menu {
+        color: #fff;
+    }
+</style>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- waterfall for second row hidden if scroll-->
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title" id="currentTitle">SCNU SoCoding 软件源镜像服务</span>
+            </div>
+        </header>
+
+
+        <div class="mdl-layout__drawer">
+            <nav class="mdl-navigation">
+                <ul class="mdl-list">
+                    <li class="mdl-layout-title mdl-list__item mdl-navigation__link">
+                        <span class="mdl-color-text--primary mdl-list__item-primary-content">
+                            <i class="mdl-color-text--primary material-icons mdl-list__item-icon">filter_drama</i>
+                            SoCoding
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="mdl-navigation">
+                <ul class="mdl-list " id="menuNav">
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="homelink" href="">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">home</i>
+                                镜像站首页
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="linux-dl" target="_blank" href="//socoding.cn/c/mirror/announcement/33">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">insert_drive_file</i>
+                                新闻与公告
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="linux-dl" target="_blank" href="//socoding.cn/c/mirror/documentation/34">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">question_answer</i>
+                                获取帮助
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item mdl-navigation__link">
+                        <a id="linux-dl" target="_blank" href="//github.com/SCNU-SoCoding/mirror-sync/actions">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon">sync</i>
+                                同步状态
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <style>
+            .content {
+                display: block;
+                margin: 16px;
+            }
+        </style>
+        <main class="mdl-layout__content">
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text"><span><span
+                                style="font-size: 32px;font-weight: bold;">稳定、快速、现代的镜像服务。</span>
+                            <br><span style="font-size: 18px;">托管于与华南教育网骨干节点华南理工大学相距很远的华南师范大学南海校区。</span></span>
+                    </h2>
+                </div>
+            </div>
+            <style>
+                .demo-card {
+                    width: 100%;
+                }
+
+                .mdl-chip__text {
+                    color: #fff;
+                }
+            </style>
+
+            <div class="content mdl-grid mdl-grid--no-spacing">
+                <div class="styles__content mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div id="archlinux" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">Arch Linux</span>
+                                        <br><span style="font-size: 14px;">Arch Linux 是通用 x86-64 GNU/Linux 发行版。Arch
+                                            采用滚动升级模式，尽全力提供最新的稳定版软件。初始安装的 Arch
+                                            只是一个基本系统，随后用户可以根据自己的喜好安装需要的软件并配置成符合自己理想的系统。</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-chip mdl-color--green">
+                                    <span class="mdl-chip__text">自动同步</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--green">
+                                    <span class="mdl-chip__text">全量同步</span>
+                                </span>
+                                <span class="mdl-chip  mdl-color--primary">
+                                    <span class="mdl-chip__text">上游 BFSU</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="archlinux/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    官方软件源
+                                </a>
+                                <a target="_blank" href="//socoding.cn/t/topic/305"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    官方软件源使用文档
+                                </a>
+                                <a href="archlinuxcn/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    中文社区软件源
+                                </a>
+                                <a target="_blank" href="//socoding.cn/t/topic/306"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    中文社区软件源使用文档
+                                </a>
+                                <a href="archlinux/iso/latest/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    安装介质
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="debian" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">Debian</span>
+                                        <br><span style="font-size: 14px;">Debian 是完全由自由软件组成的类 UNIX 操作系统，其包含的多数软件使用 GNU
+                                            通用公共许可协议授权，并由志愿者对其进行打包、开发与维护。Debian 以其坚守 UNIX
+                                            和自由软件的精神，以及其给予用户的众多选择而闻名。</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-chip mdl-color--green">
+                                    <span class="mdl-chip__text">自动同步</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--orange">
+                                    <span class="mdl-chip__text">仅收录 amd64 架构</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--orange">
+                                    <span class="mdl-chip__text">仅收录最新稳定版</span>
+                                </span>
+                                <span class="mdl-chip  mdl-color--primary">
+                                    <span class="mdl-chip__text">上游 TUNA</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="debian/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    官方软件源
+                                </a>
+                                <a href="debian-security/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    安全更新软件源
+                                </a>
+                                <a target="_blank" href="//socoding.cn/t/topic/308"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    使用文档
+                                </a>
+                                <a href="debian-cd/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    安装介质
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="manjaro" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">Manjaro</span>
+                                        <br><span style="font-size: 14px;">Manjaro 是一款派生自 Arch Linux
+                                            的发行版，和 Arch Linux 一样采用滚动升级模式，注重用户友好性和可访问性。</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-chip mdl-color--green">
+                                    <span class="mdl-chip__text">自动同步</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--green">
+                                    <span class="mdl-chip__text">全量同步</span>
+                                </span>
+                                <span class="mdl-chip  mdl-color--primary">
+                                    <span class="mdl-chip__text">上游 BFSU</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="manjaro/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    官方软件源
+                                </a>
+                                <a target="_blank" href="//socoding.cn/t/topic/309"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    使用文档
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="ubuntu" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">Ubuntu</span>
+                                        <br><span style="font-size: 14px;">Ubuntu 是一个基于 Debian 的 GNU/Linux
+                                            发行版，包含了常用的大量软件包。Ubuntu
+                                            的目标在于为一般用户提供一个最新同时又相当稳定，主要以自由软件建构而成的作业系统。Ubuntu
+                                            目前具有庞大的社群力量支持，用户可以方便地从社群获得帮助。</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-chip mdl-color--green">
+                                    <span class="mdl-chip__text">自动同步</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--orange">
+                                    <span class="mdl-chip__text">仅收录 amd64 架构</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--orange">
+                                    <span class="mdl-chip__text">仅收录最新稳定版和最新 LTS 版</span>
+                                </span>
+                                <span class="mdl-chip  mdl-color--primary">
+                                    <span class="mdl-chip__text">上游 TUNA</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="ubuntu/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    官方软件源
+                                </a>
+                                <a target="_blank" href="//socoding.cn/t/topic/307"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    使用文档
+                                </a>
+                                <a href="ubuntu-releases/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    安装介质
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="linux" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">其他 Linux 发行版安装介质</span>
+                                        <br><span style="font-size: 14px;">由于资源有限，我们只能为少量 Linux
+                                            发行版提供软件源镜像服务。对于无法完全照顾到的流行发行版，我们将尽可能地提供安装介质的镜像服务。</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-chip mdl-color--red">
+                                    <span class="mdl-chip__text">手动同步</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--orange">
+                                    <span class="mdl-chip__text">仅收录最新稳定版</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="centos/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    CentOS
+                                </a>
+                                <a href="opensuse/distribution/leap/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    openSUSE
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="app" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">常见应用安装程序</span>
+                                        <br><span style="font-size: 14px;">数值分析、程序开发和虚拟化工具。</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-chip mdl-color--red">
+                                    <span class="mdl-chip__text">手动同步</span>
+                                </span>
+                                <span class="mdl-chip mdl-color--orange">
+                                    <span class="mdl-chip__text">仅收录最新稳定版</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a href="codeblocks/Binaries/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Code Blocks
+                                </a>
+                                <a href="jetbrains/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Jetbrains
+                                </a>
+                                <a href="matlab/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Matlab
+                                </a>
+                                <a href="orwelldevcpp/Setup Releases/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Orwell Dev-Cpp
+                                </a>
+                                <a href="virtualbox/"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    VirtualBox
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer" style="padding: 16px;">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">华南师范大学软件协会隶属于软件学院，是华师南海校区最具实力的以 IT 专业学生为载体的组织</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="//github.com/SCNU-SoCoding">GitHub</a></li>
+                        <li><a href="mailto:ruanxie_scnu@163.com">Email</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+</body>
+
+</html>
