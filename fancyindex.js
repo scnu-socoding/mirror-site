@@ -188,7 +188,7 @@ arrayOfCurrentPath.forEach(function(element) {
 var templateItem = `
     <li class="mdl-list__item item">
         <span class="mdl-list__item-primary-content">
-            <span class="mdl-list__item-avatar specColor"><i class="material-icons">specIcon</i></span>
+            <span><i class="material-icons mdl-list__item-icon">specIcon</i></span>
             <a name="specLib" href="specHref">
             <span>
                 specLib
@@ -280,3 +280,4 @@ for (var i = 0; i < listOfItems.length; ++i) {
 }
 
 var out = window.location.href.replace(/:\/\//, "://log:out@");
+console.log(window.location.href);
