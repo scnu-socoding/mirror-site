@@ -138,7 +138,7 @@
             <div class="content mdl-grid mdl-grid--no-spacing">
                 <div class="styles__content mdl-grid mdl-grid--no-spacing">
                     <div id="os-list" class="mdl-cell mdl-cell--12-col">
-                        <div v-for="os in full_support_os">
+                        <div v-for="os in supported_os">
                             <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
                                 <div class="mdl-card__title mdl-card--border">
                                     <h4 class="mdl-card__title-text">
@@ -147,101 +147,18 @@
                                     </h4>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <span v-for="tag in os.tags" v-bind:class="tag.color">
+                                    <span v-for="tag in os.tags" v-bind:class="tag.color" style="margin-right: 2px;">
                                         <span class="mdl-chip__text">{{tag.text}}</span>
                                     </span>
                                 </div>
                                 <div class="mdl-card__actions mdl-card--border">
-                                    <a v-for="link in os.links" href="archlinux/"
+                                    <a v-for="link in os.links" v-bind:href="link.link"
                                         class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        官方软件源
-                                    </a>
-                                    <a target="_blank" href="//socoding.cn/t/topic/305"
-                                        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        官方软件源使用文档
-                                    </a>
-                                    <a href="archlinuxcn/"
-                                        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        中文社区软件源
-                                    </a>
-                                    <a target="_blank" href="//socoding.cn/t/topic/306"
-                                        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        中文社区软件源使用文档
-                                    </a>
-                                    <a href="archlinux/iso/latest/"
-                                        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        安装介质
+                                        {{link.text}}
                                     </a>
                                 </div>
                             </div>
                             <br>
-                        </div>
-
-                        <div id="linux" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
-                            <div class="mdl-card__title mdl-card--border">
-                                <h4 class="mdl-card__title-text">
-                                    <span><span style="font-size: 18px;">其他 Linux 发行版安装介质</span>
-                                        <br><span style="font-size: 14px;">由于资源有限，我们只能为少量 Linux
-                                            发行版提供软件源镜像服务。对于无法完全照顾到的流行发行版，我们将尽可能地提供安装介质的镜像服务。</span></span>
-                                </h4>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <span class="mdl-chip mdl-color--red">
-                                    <span class="mdl-chip__text">手动同步</span>
-                                </span>
-                                <span class="mdl-chip mdl-color--orange">
-                                    <span class="mdl-chip__text">仅收录最新稳定版</span>
-                                </span>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a href="centos/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    CentOS
-                                </a>
-                                <a href="opensuse/distribution/leap/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    openSUSE
-                                </a>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="app" class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
-                            <div class="mdl-card__title mdl-card--border">
-                                <h4 class="mdl-card__title-text">
-                                    <span><span style="font-size: 18px;">常见应用安装程序</span>
-                                        <br><span style="font-size: 14px;">数值分析、程序开发和虚拟化工具。</span></span>
-                                </h4>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <span class="mdl-chip mdl-color--red">
-                                    <span class="mdl-chip__text">手动同步</span>
-                                </span>
-                                <span class="mdl-chip mdl-color--orange">
-                                    <span class="mdl-chip__text">仅收录最新稳定版</span>
-                                </span>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a href="codeblocks/Binaries/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Code Blocks
-                                </a>
-                                <a href="jetbrains/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Jetbrains
-                                </a>
-                                <a href="matlab/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Matlab
-                                </a>
-                                <a href="orwelldevcpp/Setup Releases/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    Orwell Dev-Cpp
-                                </a>
-                                <a href="virtualbox/"
-                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    VirtualBox
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
