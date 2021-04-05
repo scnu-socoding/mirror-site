@@ -1,0 +1,22 @@
+{
+  "name": "socodingmirrorsite",
+  "version": "1.0.0",
+  "description": "华南师范大学软件协会开源镜像站",
+  "dependencies": {
+    "vue": "^3.0.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SCNU-SoCoding/mirror-site.git"
+  },
+  "keywords": [
+    "fancyindex"
+  ],
+  "author": "Bobby Rong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SCNU-SoCoding/mirror-site/issues"
+  },
+  "homepage": "https://github.com/SCNU-SoCoding/mirror-site#readme"
+}
