@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "华南师范大学软件协会开源镜像站",
   "dependencies": {
+    "material-design-lite": "^1.3.0",
     "vue": "^3.0.11"
   },
   "devDependencies": {},
