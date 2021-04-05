@@ -15,6 +15,18 @@ const os_list = {
             }, {
               text: '上游 BFSU',
               color: 'mdl-chip mdl-color--primary'
+            }, {
+              text: '官方软件源最后同步时间 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '官方软件源同步状态 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '中文社区软件源最后同步时间 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '中文社区软件源同步状态 未知',
+              color: 'mdl-chip mdl-color--grey'
             }
           ],
           links: [
@@ -52,20 +64,32 @@ const os_list = {
             }, {
               text: '上游 TUNA',
               color: 'mdl-chip mdl-color--primary'
+            }, {
+              text: '主软件源最后同步时间 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '主软件源同步状态 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '更新软件源最后同步时间 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '更新软件源同步状态 未知',
+              color: 'mdl-chip mdl-color--grey'
             }
           ],
           links: [
             {
-              text: '官方软件源',
+              text: '主软件源',
               link: '/debian/'
             }, {
-              text: '安全更新软件源',
+              text: '更新软件源',
               link: '/debian-security/'
             }, {
               text: '使用文档',
               link: '//socoding.cn/t/topic/308'
             }, {
-              text: '安装介质',
+              text: '安装介质 (手动同步)',
               link: '/debian-cd/'
             }
           ]
@@ -83,11 +107,17 @@ const os_list = {
             }, {
               text: '上游 BFSU',
               color: 'mdl-chip mdl-color--primary'
+            }, {
+              text: '最后同步时间 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '同步状态 未知',
+              color: 'mdl-chip mdl-color--grey'
             }
           ],
           links: [
             {
-              text: '官方软件源',
+              text: '软件源',
               link: '/manjaro/'
             }, {
               text: '使用文档',
@@ -110,17 +140,23 @@ const os_list = {
             }, {
               text: '上游 TUNA',
               color: 'mdl-chip mdl-color--primary'
+            }, {
+              text: '最后同步时间 未知',
+              color: 'mdl-chip mdl-color--grey'
+            }, {
+              text: '同步状态 未知',
+              color: 'mdl-chip mdl-color--grey'
             }
           ],
           links: [
             {
-              text: '官方软件源',
+              text: '软件源',
               link: '/ubuntu/'
             }, {
               text: '使用文档',
               link: '//socoding.cn/t/topic/307'
             }, {
-              text: '安装介质',
+              text: '安装介质 (手动同步)',
               link: '/ubuntu-releases/'
             }
           ]
