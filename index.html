@@ -40,7 +40,6 @@
     <link rel="stylesheet" href="/fancyindex/css/fancyindex.css">
 
     <script src="/fancyindex/node_modules/vue/dist/vue.global.js"></script>
-    <script src="/fancyindex/js/index.js"></script>
 </head>
 
 <style>
@@ -138,8 +137,8 @@
 
             <div class="content mdl-grid mdl-grid--no-spacing">
                 <div class="styles__content mdl-grid mdl-grid--no-spacing">
-                    <div id="full-support-os-list" class="mdl-cell mdl-cell--12-col">
-                        <div v-for="os in full-support-os">
+                    <div id="os-list" class="mdl-cell mdl-cell--12-col">
+                        <div v-for="os in full_support_os">
                             <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
                                 <div class="mdl-card__title mdl-card--border">
                                     <h4 class="mdl-card__title-text">
@@ -149,7 +148,7 @@
                                 </div>
                                 <div class="mdl-card__supporting-text">
                                     <span v-for="tag in os.tags" v-bind:class="tag.color">
-                                        <span class="mdl-chip__text">{{tag.text}}}</span>
+                                        <span class="mdl-chip__text">{{tag.text}}</span>
                                     </span>
                                 </div>
                                 <div class="mdl-card__actions mdl-card--border">
@@ -259,6 +258,7 @@
         </main>
 
     </div>
+    <script src="/fancyindex/js/index.js"></script>
 </body>
 
 </html>
