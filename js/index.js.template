@@ -16,10 +16,12 @@ const os_list = {
               text: '上游 BFSU',
               color: 'mdl-chip mdl-color--primary'
             }, {
-              text: 'stat: ?', // archlinux
+              key: 'archlinux_sync_status',
+              text: 'stat: ?',
               color: 'mdl-chip mdl-color--blue-grey'
             }, {
-              text: 'stat: ?', // archlinuxcn
+              key: 'archlinuxcn_sync_status',
+              text: 'stat: ?',
               color: 'mdl-chip mdl-color--blue-grey'
             }
           ],
@@ -59,10 +61,12 @@ const os_list = {
               text: '上游 TUNA',
               color: 'mdl-chip mdl-color--primary'
             }, {
-              text: 'stat: ?', // debian
+              key: 'debian_sync_status',
+              text: 'stat: ?',
               color: 'mdl-chip mdl-color--blue-grey'
             }, {
-              text: 'stat: ?', // debian-security
+              key: 'debian-security_sync_status',
+              text: 'stat: ?',
               color: 'mdl-chip mdl-color--blue-grey'
             }
           ],
@@ -96,7 +100,8 @@ const os_list = {
               text: '上游 BFSU',
               color: 'mdl-chip mdl-color--primary'
             }, {
-              text: 'stat: ?', // manjaro
+              key: 'manjaro_sync_status',
+              text: 'stat: ?',
               color: 'mdl-chip mdl-color--blue-grey'
             }
           ],
@@ -126,7 +131,8 @@ const os_list = {
               text: '上游 TUNA',
               color: 'mdl-chip mdl-color--primary'
             }, {
-              text: 'stat: ?', // ubuntu
+              key: 'ubuntu_sync_status',
+              text: 'stat: ?',
               color: 'mdl-chip mdl-color--blue-grey'
             }
           ],
