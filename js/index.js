@@ -4,7 +4,7 @@ const os_list = {
       supported_os: [
         {
           name: 'Arch Linux',
-          description: 'Arch Linux 是通用 x86-64 GNU/Linux 发行版。Arch 采用滚动升级模式，尽全力提供最新的稳定版软件。初始安装的 Arch 只是一个基本系统，随后用户可以根据自己的喜好安装需要的软件并配置成符合自己理想的系统。',
+          description: 'Arch Linux 是通用 x86-64 Linux 发行版。Arch 采用滚动升级模式，尽全力提供最新的稳定版软件。初始安装的 Arch 只是一个基本系统，随后用户可以根据自己的喜好安装需要的软件并配置成符合自己理想的系统。',
           tags: [
             {
               text: '自动同步',
@@ -116,7 +116,7 @@ const os_list = {
           ]
         }, {
           name: 'Ubuntu',
-          description: 'Ubuntu 是一个基于 Debian 的 GNU/Linux 发行版，包含了常用的大量软件包。Ubuntu 的目标在于为一般用户提供一个最新同时又相当稳定，主要以自由软件建构而成的作业系统。Ubuntu 目前具有庞大的社群力量支持，用户可以方便地从社群获得帮助。',
+          description: 'Ubuntu 是一个基于 Debian 的 Linux 发行版，包含了常用的大量软件包。Ubuntu 的目标在于为一般用户提供一个最新同时又相当稳定，主要以自由软件建构而成的作业系统。Ubuntu 目前具有庞大的社群力量支持，用户可以方便地从社群获得帮助。',
           tags: [
             {
               text: '自动同步',
