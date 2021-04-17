@@ -280,4 +280,4 @@ for (var i = 0; i < listOfItems.length; ++i) {
 }
 
 var out = window.location.href.replace(/:\/\//, "://log:out@");
-console.log(window.location.href);
+// console.log(window.location.href);
