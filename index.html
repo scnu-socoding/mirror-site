@@ -68,7 +68,7 @@
 
             <nav class="mdl-navigation">
                 <ul class="mdl-list" id="menuNav" >
-                    <li class="mdl-list__item mdl-navigation__link">
+                    <li class="mdl-list__item mdl-navigation__link" v-for="item in side_link">
                         <a v-bind:href="item.link" v-bind:target="item.target">
                             <span class="mdl-list__item-primary-content">
                                 <i class="material-icons mdl-list__item-icon">{{item.icon}}</i>
