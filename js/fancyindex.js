@@ -147,7 +147,7 @@ var arrayOfCurrentPath = currentPath.split("/");
 arrayOfCurrentPath.splice(0, 1);
 arrayOfCurrentPath.splice(arrayOfCurrentPath.length - 1, 1);
 
-document.getElementById("homelink").href = "../".repeat(arrayOfCurrentPath.length);
+// document.getElementById("homelink").href = "../".repeat(arrayOfCurrentPath.length);
 
 // manage sort
 if (window.location.href.split("?")[1] == "C=M&O=D") {
