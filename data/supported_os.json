@@ -29,23 +29,28 @@
         "links": [
             {
                 "text": "官方软件源",
-                "link": "/archlinux/"
+                "link": "/archlinux/",
+                "target": "_self"
             },
             {
                 "text": "官方软件源使用文档",
-                "link": " //socoding.cn/t/topic/305"
+                "link": " //socoding.cn/t/topic/305",
+                "target": "_blank"
             },
             {
                 "text": "中文社区软件源",
-                "link": "/archlinuxcn/"
+                "link": "/archlinuxcn/",
+                "target": "_self"
             },
             {
                 "text": "中文社区软件源使用文档",
-                "link": " //socoding.cn/t/topic/306"
+                "link": " //socoding.cn/t/topic/306",
+                "target": "_blank"
             },
             {
                 "text": "安装介质",
-                "link": "/archlinux/iso/latest/"
+                "link": "/archlinux/iso/latest/",
+                "target": "_self"
             }
         ]
     },
@@ -83,19 +88,23 @@
         "links": [
             {
                 "text": "主软件源",
-                "link": "/debian/"
+                "link": "/debian/",
+                "target": "_self"
             },
             {
                 "text": "更新软件源",
-                "link": "/debian-security/"
+                "link": "/debian-security/",
+                "target": "_self"
             },
             {
                 "text": "使用文档",
-                "link": " //socoding.cn/t/topic/308"
+                "link": " //socoding.cn/t/topic/308",
+                "target": "_blank"
             },
             {
                 "text": "安装介质 (手动同步)",
-                "link": "/debian-cd/"
+                "link": "/debian-cd/",
+                "target": "_self"
             }
         ]
     },
@@ -124,11 +133,13 @@
         "links": [
             {
                 "text": "软件源",
-                "link": "/manjaro/"
+                "link": "/manjaro/",
+                "target": "_self"
             },
             {
                 "text": "使用文档",
-                "link": " //socoding.cn/t/topic/309"
+                "link": " //socoding.cn/t/topic/309",
+                "target": "_blank"
             }
         ]
     },
@@ -161,15 +172,18 @@
         "links": [
             {
                 "text": "软件源",
-                "link": "/ubuntu/"
+                "link": "/ubuntu/",
+                "target": "_self"
             },
             {
                 "text": "使用文档",
-                "link": " //socoding.cn/t/topic/307"
+                "link": " //socoding.cn/t/topic/307",
+                "target": "_blank"
             },
             {
                 "text": "安装介质 (手动同步)",
-                "link": "/ubuntu-releases/"
+                "link": "/ubuntu-releases/",
+                "target": "_self"
             }
         ]
     },
@@ -189,11 +203,13 @@
         "links": [
             {
                 "text": "CentOS",
-                "link": "/centos/"
+                "link": "/centos/",
+                "target": "_self"
             },
             {
                 "text": "openSUSE",
-                "link": "/opensuse/distribution/leap/"
+                "link": "/opensuse/distribution/leap/",
+                "target": "_self"
             }
         ]
     },
@@ -213,23 +229,28 @@
         "links": [
             {
                 "text": "Code Blocks",
-                "link": "/codeblocks/Binaries/"
+                "link": "/codeblocks/Binaries/",
+                "target": "_self"
             },
             {
                 "text": "Jetbrains",
-                "link": "/jetbrains/"
+                "link": "/jetbrains/",
+                "target": "_self"
             },
             {
                 "text": "Matlab",
-                "link": "/matlab/"
+                "link": "/matlab/",
+                "target": "_self"
             },
             {
                 "text": "Orwell Dev-Cpp",
-                "link": "/orwelldevcpp/Setup Releases/"
+                "link": "/orwelldevcpp/Setup Releases/",
+                "target": "_self"
             },
             {
                 "text": "VirtualBox",
-                "link": "/virtualbox/"
+                "link": "/virtualbox/",
+                "target": "_self"
             }
         ]
     }
