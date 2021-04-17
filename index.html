@@ -67,7 +67,7 @@
             </nav>
 
             <nav class="mdl-navigation">
-                <ul class="mdl-list" id="menuNav" >
+                <ul class="mdl-list" id="menuNav">
                     <li class="mdl-list__item mdl-navigation__link" v-for="item in side_link">
                         <a v-bind:href="item.link" v-bind:target="item.target">
                             <span class="mdl-list__item-primary-content">
@@ -106,7 +106,7 @@
                                     </span>
                                 </div>
                                 <div class="mdl-card__actions mdl-card--border">
-                                    <a v-for="link in os.links" v-bind:href="link.link"
+                                    <a v-for="link in os.links" v-bind:href="link.link" v-bind:target="link.target"
                                         class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                         {{link.text}}
                                     </a>
