@@ -1,0 +1,26 @@
+.demo-card-wide.mdl-card {
+    width: 100%;
+}
+
+.demo-card-wide>.mdl-card__title {
+    color: #fff;
+    height: 300px;
+    background: url('/fancyindex/images/wallpaper.png') center / cover;
+}
+
+.demo-card-wide>.mdl-card__menu {
+    color: #fff;
+}
+
+.content {
+    display: block;
+    margin: 16px;
+}
+
+.demo-card {
+    width: 100%;
+}
+
+.mdl-chip__text {
+    color: #fff;
+}

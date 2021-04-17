@@ -38,29 +38,14 @@
     <script src="/fancyindex/node_modules/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="/fancyindex/node_modules/material-design-lite/material.min.css">
     <link rel="stylesheet" href="/fancyindex/css/fancyindex.css">
+    <link rel="stylesheet" href="/fancyindex/css/index.css">
 
     <script src="/fancyindex/node_modules/vue/dist/vue.global.js"></script>
 </head>
 
-<style>
-    .demo-card-wide.mdl-card {
-        width: 100%;
-    }
-
-    .demo-card-wide>.mdl-card__title {
-        color: #fff;
-        height: 300px;
-        background: url('/fancyindex/images/wallpaper.png') center / cover;
-    }
-
-    .demo-card-wide>.mdl-card__menu {
-        color: #fff;
-    }
-</style>
-
 <body>
     <!-- Always shows a header, even in smaller screens. -->
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header"  id="app">
         <!-- waterfall for second row hidden if scroll-->
         <header class="mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
@@ -110,12 +95,6 @@
                 </ul>
             </nav>
         </div>
-        <style>
-            .content {
-                display: block;
-                margin: 16px;
-            }
-        </style>
         <main class="mdl-layout__content">
             <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
@@ -125,15 +104,6 @@
                     </h2>
                 </div>
             </div>
-            <style>
-                .demo-card {
-                    width: 100%;
-                }
-
-                .mdl-chip__text {
-                    color: #fff;
-                }
-            </style>
 
             <div class="content mdl-grid mdl-grid--no-spacing">
                 <div class="styles__content mdl-grid mdl-grid--no-spacing">
