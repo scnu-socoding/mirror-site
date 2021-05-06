@@ -6,15 +6,27 @@
         "target": "_self"
     },
     {
-        "text": "新闻与公告",
-        "icon": "insert_drive_file",
-        "link": "//socoding.cn/c/mirror/announcement/33",
+        "text": "服务导航 (内网)",
+        "icon": "map",
+        "link": "//internal.socoding.cn",
         "target": "_blank"
     },
     {
-        "text": "获取帮助",
+        "text": "评测系统 (公网)",
+        "icon": "code",
+        "link": "//oj.socoding.cn",
+        "target": "_blank"
+    },
+    {
+        "text": "论坛",
         "icon": "question_answer",
-        "link": "//socoding.cn/c/mirror/documentation/34",
+        "link": "//socoding.cn",
+        "target": "_blank"
+    },
+    {
+        "text": "开源协作",
+        "icon": "link",
+        "link": "//github.com/scnu-socoding/",
         "target": "_blank"
     }
 ]
