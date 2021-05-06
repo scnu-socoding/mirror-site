@@ -1,5 +1,6 @@
 var supported_os_file = '/fancyindex/data/supported_os.json';
 var side_link_file = '/fancyindex/data/side_link.json';
+var mirror_site_link_file = '/fancyindex/data/mirror_site_link.json';
 var announcement_file = '/fancyindex/data/remote/announcement.json';
 
 function sortByKey(array, key) {
@@ -26,7 +27,8 @@ var app = Vue.createApp({
         return {
             supported_os: [],
             side_link: [],
-            announcement: []
+            mirror_site_link: [],
+            announcement: [],
         }
     },
     mounted() {
@@ -36,6 +38,9 @@ var app = Vue.createApp({
         });
         loadJSON(side_link_file, function (response) {
             self.side_link = JSON.parse(response);
+        });
+        loadJSON(mirror_site_link_file, function (response) {
+            self.mirror_site_link = JSON.parse(response);
         });
         loadJSON(announcement_file, function (response) {
             self.announcement = JSON.parse(response)['topic_list']['topics'];

@@ -148,14 +148,8 @@
                                 <h4 class="mdl-card__title-text"><span><span
                                             style="font-size: 18px;">镜像站地址</span></span></h4>
                             </div>
-
-                            <a class="mdl-card__supporting-text  mdl-card--border" href="//10.191.65.243:9000">
-                                10.191.65.243:9000 (校园网)</a>
-                            <a class="mdl-card__supporting-text  mdl-card--border"
-                                href="//mirrors-internal.socoding.cn"> mirrors-internal.socoding.cn (校园网)</a>
-                            <a class="mdl-card__supporting-text  mdl-card--border" href="//mirrors.socoding.cn">
-                                mirrors.socoding.cn (公网, 不推荐使用)</a>
-
+                            <a v-for="item in mirror_site_link" class="mdl-card__supporting-text  mdl-card--border"
+                                v-bind:href="item.link" v-bind:target="item.target">{{item.text}}</a>
                         </div>
 
                         <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0px;">

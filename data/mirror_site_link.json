@@ -1,0 +1,17 @@
+[
+    {
+        "text": "10.191.65.243:9000 (校园网, HTTP)",
+        "link": "http://10.191.65.243:9000",
+        "target": "_self"
+    },
+    {
+        "text": "mirrors-internal.socoding.cn (校园网, HTTPS)",
+        "link": "//mirrors-internal.socoding.cn",
+        "target": "_self"
+    },
+    {
+        "text": "mirrors.socoding.cn (公网, HTTPS, 不推荐使用)",
+        "link": "//mirrors.socoding.cn",
+        "target": "_self"
+    }
+]
