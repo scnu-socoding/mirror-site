@@ -53,7 +53,6 @@
             </div>
         </header>
 
-
         <div class="mdl-layout__drawer">
             <nav class="mdl-navigation">
                 <ul class="mdl-list">
@@ -79,6 +78,7 @@
                 </ul>
             </nav>
         </div>
+
         <main class="mdl-layout__content">
             <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="border-radius: 0">
                 <div class="mdl-card__title">
@@ -88,45 +88,93 @@
                     </h2>
                 </div>
             </div>
-
             <div class="content mdl-grid mdl-grid--no-spacing">
-                <div class="styles__content mdl-grid mdl-grid--no-spacing">
-                    <div id="os-list" class="mdl-cell mdl-cell--12-col">
-                        <div v-for="os in supported_os">
-                            <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0;">
-                                <div class="mdl-card__title mdl-card--border">
-                                    <h4 class="mdl-card__title-text">
-                                        <span><span style="font-size: 18px;">{{os.name}}</span>
-                                            <br><span style="font-size: 14px;">{{os.description}}</span></span>
-                                    </h4>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <span v-for="tag in os.tags" v-bind:class="tag.color" style="margin-right: 2px;">
-                                        <span class="mdl-chip__text">{{tag.text}}</span>
-                                    </span>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a v-for="link in os.links" v-bind:href="link.link" v-bind:target="link.target"
-                                        class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        {{link.text}}
-                                    </a>
-                                </div>
+                <div class="styles__content mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop">
+                        <div v-for="os in supported_os" class="demo-card mdl-card mdl-shadow--2dp"
+                            style="min-height: 0;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text">
+                                    <span><span style="font-size: 18px;">{{os.name}}</span>
+                                        <br><span style="font-size: 14px;">{{os.description}}</span></span>
+                                </h4>
                             </div>
-                            <br>
+                            <div class="mdl-card__supporting-text">
+                                <span v-for="tag in os.tags" v-bind:class="tag.color" style="margin-right: 2px;">
+                                    <span class="mdl-chip__text">{{tag.text}}</span>
+                                </span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a v-for="link in os.links" v-bind:href="link.link" v-bind:target="link.target"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    {{link.text}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-desktop">
+
+                        <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0px;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text"><span><span style="font-size: 18px;">友情提示</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text  mdl-card--border">
+                                同步频率为每天两次，每天 1:00 和 5:00 (UTC+8) 为镜像的同步时间。<br>
+                                如果需要下载 ISO 镜像，请直接使用 Firefox 等浏览器下载，不要使用 P2P 下载工具。
+
+                            </div>
+                        </div>
+                        <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0px;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text"><span><span
+                                            style="font-size: 18px;">镜像站新闻</span></span></h4>
+                            </div>
+                            <a v-for="topic in announcement" class="mdl-card__supporting-text  mdl-card--border"
+                                v-bind:href="topic.id" target="_blank">
+                                {{topic.title}}
+                            </a>
+                            <div class="mdl-card__actions"><a href="//socoding.cn/c/mirror/announcement/"
+                                    target="_blank"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">查看更多</a>
+                                <a href="//socoding.cn/c/mirror/" target="_blank"
+                                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">获取帮助</a>
+                            </div>
+                        </div>
+                        <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0px;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text"><span><span
+                                            style="font-size: 18px;">镜像站地址</span></span></h4>
+                            </div>
+
+                            <a class="mdl-card__supporting-text  mdl-card--border" href="//10.191.65.243:9000">
+                                10.191.65.243:9000 (校园网)</a>
+                            <a class="mdl-card__supporting-text  mdl-card--border"
+                                href="//mirrors-internal.socoding.cn"> mirrors-internal.socoding.cn (校园网)</a>
+                            <a class="mdl-card__supporting-text  mdl-card--border" href="//mirrors.socoding.cn">
+                                mirrors.socoding.cn (公网, 不推荐使用)</a>
+
+                        </div>
+
+                        <div class="demo-card mdl-card mdl-shadow--2dp" style="min-height: 0px;">
+                            <div class="mdl-card__title mdl-card--border">
+                                <h4 class="mdl-card__title-text"><span><span style="font-size: 18px;">关于我们</span></span>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text  mdl-card--border">
+                                华南师范大学软件协会隶属于软件学院，是华师南海校区最具实力的以 IT
+                                专业学生为载体的组织。我们的愿景是：营造院内学术氛围；分享具有实用价值的经验；开发和运营实用的互联网产品。
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <footer class="mdl-mini-footer" style="padding: 16px;">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">华南师范大学软件协会隶属于软件学院，是华师南海校区最具实力的以 IT 专业学生为载体的组织</div>
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="//github.com/SCNU-SoCoding">GitHub</a></li>
-                        <li><a href="mailto:ruanxie_scnu@163.com">Email</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
+    </div>
+    </main>
 
     </div>
     <script src="/fancyindex/js/index.js"></script>
