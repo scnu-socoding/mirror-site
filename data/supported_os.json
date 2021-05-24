@@ -198,6 +198,11 @@
                 "text": "安装介质 (手动同步)",
                 "link": "/ubuntu-releases/",
                 "target": "_self"
+            },
+            {
+                "text": "ICPC 比赛环境 (手动同步)",
+                "link": "/wfImageBuilds/",
+                "target": "_self"
             }
         ]
     },
@@ -220,6 +225,11 @@
             {
                 "text": "CentOS",
                 "link": "/centos/",
+                "target": "_self"
+            },
+            {
+                "text": "Fedora",
+                "link": "/fedora/releases/",
                 "target": "_self"
             },
             {
